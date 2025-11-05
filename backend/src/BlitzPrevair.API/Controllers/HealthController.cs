@@ -13,7 +13,8 @@ public class HealthController : ControllerBase
         {
             status = "healthy",
             timestamp = DateTime.UtcNow,
-            service = "BlitzPrevair API",
+            service = "AppointmentApp API",
+            platform = "Multi-Tenant Appointment Scheduling",
             version = "1.0.0"
         });
     }

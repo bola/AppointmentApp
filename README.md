@@ -1,11 +1,22 @@
-# Blitz Prevair - Multi-Tenant Appointment Scheduling Platform
+# AppointmentApp - Multi-Tenant Appointment Scheduling Platform
 
-A comprehensive appointment scheduling solution for wellness and service providers, similar to Soothe.com. Enables multiple companies to manage services, providers, and appointments with a seamless booking experience.
+A comprehensive multi-tenant SaaS platform for appointment scheduling, similar to Soothe.com. Enables multiple wellness and service companies (like **Blitz Prive**) to manage their services, providers, and appointments with a seamless booking experience.
 
-## 🎯 Features
+**AppointmentApp** is the platform - **Blitz Prive** is one of many companies (tenants) that use it.
+
+## 🎯 Platform Features
+
+### Multi-Tenancy
+AppointmentApp is a **SaaS platform** that hosts multiple independent wellness companies:
+- **Tenant Isolation**: Each company (like Blitz Prive) has their own:
+  - Branded subdomain (e.g., blitzprive.appointmentapp.com)
+  - Services and categories
+  - Service providers
+  - Custom forms and consent documents
+  - Customer base and appointments
+- **White-label Ready**: Each tenant can customize branding, colors, and logo
 
 ### Core Functionality
-- **Multi-Tenant Architecture**: Multiple companies can create and manage their service listings
 - **Service Categories**: Organize services into categories (Massage, Physiotherapy, Facials, etc.)
 - **Provider Management**:
   - Select specific service providers
@@ -98,8 +109,17 @@ npx expo start
 
 ## 🔑 Key Concepts
 
-### Multi-Tenancy
-Each company (tenant) has isolated data and configurations. Tenants are identified by subdomain or tenant ID.
+### Multi-Tenancy Architecture
+AppointmentApp is a SaaS platform where each company (tenant) operates independently:
+- **Data Isolation**: Complete separation between tenants for security and privacy
+- **Custom Branding**: Each tenant has their own logo, colors, and subdomain
+- **Independent Configuration**: Services, forms, and consent documents per tenant
+- **Tenant Identification**: By subdomain (blitzprive.appointmentapp.com) or tenant ID in API calls
+
+**Example Tenants:**
+- **Blitz Prive** - Premium wellness and massage services
+- **Wellness Co** - Physiotherapy and rehabilitation
+- **Spa Elite** - Facial and beauty treatments
 
 ### Service Configuration
 Services can be configured with:
@@ -108,15 +128,17 @@ Services can be configured with:
 - Duration and pricing
 - Custom form fields
 
-### Booking Flow
-1. Select tenant/company
-2. Browse service categories
-3. Select service(s)
-4. Choose provider or gender preference
-5. View and select available time slots
-6. Complete registration form
-7. Review and accept consent forms
-8. Confirm booking
+### Customer Booking Flow
+When a customer visits a tenant's site (e.g., blitzprive.appointmentapp.com):
+
+1. **Browse Services**: View available services organized by categories
+2. **Select Service(s)**: Choose one or multiple services to book
+3. **Choose Provider**: Select specific provider or specify gender preference
+4. **Pick Time Slot**: View and select available appointment times
+5. **Register/Login**: Complete customer registration with tenant's custom form fields
+6. **Accept Terms**: Review and accept tenant's consent forms and terms
+7. **Confirm Booking**: Finalize appointment and receive confirmation
+8. **Receive Notification**: Get email/SMS confirmation with appointment details
 
 ## 📚 Documentation
 

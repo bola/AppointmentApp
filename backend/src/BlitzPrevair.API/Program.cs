@@ -45,4 +45,12 @@ app.UseCors("AllowFrontend");
 app.UseAuthorization();
 app.MapControllers();
 
+// Seed database if --seed argument is provided
+if (args.Contains("--seed"))
+{
+    using var scope = app.Services.CreateScope();
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await BlitzPrevair.API.Data.DbSeeder.SeedAsync(context);
+}
+
 app.Run();

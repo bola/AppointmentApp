@@ -5,11 +5,12 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
+          <div className="text-sm text-gray-500 mb-2">Demo Tenant: Blitz Prive</div>
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            Welcome to Blitz Prevair
+            Welcome to Blitz Prive
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Book wellness services from the comfort of your home
+            Premium wellness services from the comfort of your home
           </p>
           <div className="flex justify-center gap-4">
             <Link

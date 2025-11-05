@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Blitz Prevair",
-    "slug": "blitzprevair",
+    "name": "Blitz Prive",
+    "slug": "blitzprive",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,20 +16,20 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.blitzprevair.app"
+      "bundleIdentifier": "com.blitzprive.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.blitzprevair.app"
+      "package": "com.blitzprive.app"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "scheme": "blitzprevair",
+    "scheme": "blitzprive",
     "plugins": [
       "expo-router"
     ]

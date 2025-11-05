@@ -1,6 +1,8 @@
-# Blitz Prevair - Setup Guide
+# AppointmentApp - Setup Guide
 
-This guide will help you set up the Blitz Prevair application for local development.
+This guide will help you set up the AppointmentApp multi-tenant scheduling platform for local development.
+
+**Note:** Blitz Prive is just one example tenant in the system. The platform supports multiple tenants.
 
 ## Prerequisites
 
@@ -243,7 +245,7 @@ npm run web
 
 ## Seeding Sample Data
 
-Create a seed script to populate the database with sample data:
+Populate the database with sample data for Blitz Prive (example tenant):
 
 ```bash
 cd backend/src/BlitzPrevair.API
@@ -251,11 +253,18 @@ dotnet run --seed
 ```
 
 This will create:
-- Sample tenant
-- Service categories
-- Services
-- Service providers
-- Sample availability schedules
+- **Blitz Prive** tenant (example wellness company)
+- Service categories: Massage, Physiotherapy, Facial & Spa
+- 7 services across categories
+- 5 service providers with different specialties
+- Provider availability schedules (Mon-Fri, 9 AM - 5 PM)
+- Custom form fields for bookings
+- Terms and conditions consent form
+
+After seeding, you can:
+- Browse services at `blitzprive.appointmentapp.com` (requires DNS/subdomain setup)
+- Access via API: `GET /api/tenants/subdomain/blitzprive`
+- View providers: `GET /api/tenants/{tenantId}/providers`
 
 ## Troubleshooting
 

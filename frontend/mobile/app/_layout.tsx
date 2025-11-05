@@ -6,7 +6,7 @@ export default function RootLayout() {
     <>
       <StatusBar style="auto" />
       <Stack>
-        <Stack.Screen name="index" options={{ title: 'Blitz Prevair' }} />
+        <Stack.Screen name="index" options={{ title: 'Blitz Prive' }} />
         <Stack.Screen name="services" options={{ title: 'Services' }} />
       </Stack>
     </>

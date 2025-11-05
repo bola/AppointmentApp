@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Blitz Prevair - Book Your Wellness Services',
-  description: 'Book massage, physiotherapy, facials, and more wellness services',
+  title: 'Blitz Prive - Premium Wellness Services',
+  description: 'Book massage, physiotherapy, facials, and more wellness services with Blitz Prive',
 }
 
 export default function RootLayout({

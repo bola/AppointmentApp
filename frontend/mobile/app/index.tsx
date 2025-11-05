@@ -9,9 +9,10 @@ export default function Home() {
         colors={['#3b82f6', '#60a5fa', '#93c5fd']}
         style={styles.header}
       >
-        <Text style={styles.title}>Welcome to Blitz Prevair</Text>
+        <Text style={styles.demo}>Demo Tenant: Blitz Prive</Text>
+        <Text style={styles.title}>Welcome to Blitz Prive</Text>
         <Text style={styles.subtitle}>
-          Book wellness services from the comfort of your home
+          Premium wellness services from the comfort of your home
         </Text>
       </LinearGradient>
 
@@ -84,6 +85,12 @@ const styles = StyleSheet.create({
     padding: 40,
     paddingTop: 60,
     alignItems: 'center',
+  },
+  demo: {
+    fontSize: 12,
+    color: '#e0f2fe',
+    marginBottom: 8,
+    textAlign: 'center',
   },
   title: {
     fontSize: 32,
